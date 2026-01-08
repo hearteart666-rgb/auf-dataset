@@ -1,0 +1,61 @@
+prompts:
+  basic_reasoning: |
+    # Instructions
+    With the given user feedback case and a predefined set of classification categories, the task is to analyze the case step-by-step and determine the most appropriate category.
+
+    Please respond strictly in the following format:
+    <Quick Assessment>
+    1. Collect and analyze key information from User Description and User Image to understand the issue.
+    2. State the root cause and determine the correct category based on the evidence.
+    </Quick Assessment>
+    <FinalCategory>[Only write the final category name here]</FinalCategory>
+
+  complex_reasoning: |
+    # Instructions
+    With the given user feedback case and a predefined set of classification categories, the task is to analyze the case step-by-step and determine the most appropriate category.
+
+    Please respond strictly in the following format:
+    <Quick Assessment>
+    1. Collect and analyze key information from User Description and User Image to understand the issue.
+    2. **Correlation Analysis & Evidence Weighting**
+         Determine which type of correlation exists:
+         - **Consistent**: Both convey the same information or confirm each other, with high semantic overlap.
+          > **Strategy**: Formulate the root cause primarily based on the **User Description** (text), treating the User Image as supporting verification.
+         - **Complementary**: Both provide different but mutually supportive information about the same issue, where combining both leads to a more complete understanding.
+          > **Strategy**: **Synthesize** information from both sources. Combine text details and visual cues to construct a complete understanding.
+         - **Contradictory**: Both point to different root causes or contain conflicting information, requiring further analysis to identify the true issue.
+          > **Strategy**: Prioritize the **User Image** (visual evidence) as the ground truth, or focus on the evidence that most clearly aids in correct classification, disregarding the conflicting text.
+    3. **Root Cause Formulation & Category Justification**
+         - **Derive Root Cause**: Based on the strategy in Step 2, clearly define the specific issue.
+         - **Justify Category**: Compare this Root Cause against the category definitions. Explain **why** this issue belongs to the chosen category.
+    </Quick Assessment>
+    <FinalCategory>[Only write the final category name here]</FinalCategory>
+
+  adaptive_reasoning: |
+    ## Instructions:
+    With the given user feedback case and a predefined set of classification categories, the task is to analyze the case step-by-step and determine the most appropriate category.
+    And based on the user description and image(s), select either the basic reasoning process or the complex reasoning process for classification. Begin by assessing whether the basic reasoning process adequately addresses the complexity of the user images and description to ensure accurate classification. If the basic reasoning process proves sufficient, apply it; if not, proceed with the complex reasoning process.
+
+    ## Basic reasoning process:
+    <Quick Assessment>
+    1. Collect and analyze key information from User Description and User Image to understand the issue.
+    2. State the root cause and determine the correct category based on the evidence.
+    </Quick Assessment>
+    <FinalCategory>[Only write the final category name here]</FinalCategory>
+
+    ## Complex reasoning process:
+    <Quick Assessment>
+    1. Collect and analyze key information from User Description and User Image to understand the issue.
+    2. **Correlation Analysis & Evidence Weighting**
+         Determine which type of correlation exists:
+         - **Consistent**: Both convey the same information or confirm each other, with high semantic overlap.
+          > **Strategy**: Formulate the root cause primarily based on the **User Description** (text), treating the User Image as supporting verification.
+         - **Complementary**: Both provide different but mutually supportive information about the same issue, where combining both leads to a more complete understanding.
+          > **Strategy**: **Synthesize** information from both sources. Combine text details and visual cues to construct a complete understanding.
+         - **Contradictory**: Both point to different root causes or contain conflicting information, requiring further analysis to identify the true issue.
+          > **Strategy**: Prioritize the **User Image** (visual evidence) as the ground truth, or focus on the evidence that most clearly aids in correct classification, disregarding the conflicting text.
+    3. **Root Cause Formulation & Category Justification**
+         - **Derive Root Cause**: Based on the strategy in Step 2, clearly define the specific issue.
+         - **Justify Category**: Compare this Root Cause against the category definitions. Explain **why** this issue belongs to the chosen category.
+    </Quick Assessment>
+    <FinalCategory>[Only write the final category name here]</FinalCategory>
