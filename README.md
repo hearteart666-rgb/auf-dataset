@@ -11,25 +11,14 @@ We present:
 
 ## Dataset
 
-The AUF dataset contains multimodal user feedback collected from the Google Android Help Community, with 21 fine-grained categories organized into 9 groups:
-
-| Group                                                       | Categories                                              |
-| ----------------------------------------------------------- | ------------------------------------------------------- |
-| Accessibility / Camera                                      | Accessibility, Camera                                   |
-| Wi-Fi Connectivity / Bluetooth                              | Wi-Fi Connectivity, Bluetooth                           |
-| Privacy & Permissions / Malware / Security                  | Privacy & Permissions, Malware, Security                |
-| Google Play Services                                        | Google Play Services                                    |
-| Backup & Restore / Settings / Notifications                 | Backup & Restore, Settings, Notifications               |
-| Find My Device / GPS / Location                             | Find My Device, GPS, Location                           |
-| Device Protection / Forgot PIN, Pattern, Passcode / Syncing | Device Protection, Forgot PIN/Pattern/Passcode, Syncing |
-| Battery / Performance / Stability                           | Battery, Performance, Stability                         |
-| Other                                                       | Other                                                   |
+The AUF dataset contains multimodal user feedback collected from the Google Android Help Community, with 21 fine-grained categories.
 
 ## Project Structure
 
 ```
 .
 ├── data/
+│   ├── examples           # image examples for demonstration
 │   ├── data.json          # Full dataset
 │   ├── train.json         # Training set
 │   └── test.json          # Test set
