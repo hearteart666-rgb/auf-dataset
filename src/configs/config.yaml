@@ -13,7 +13,7 @@ lora_target: all
 
 ### dataset
 dataset: your_dataset_name
-template: qwen2_vl
+template: your_model_template
 cutoff_len: 8192
 overwrite_cache: true
 preprocessing_num_workers: 16
@@ -21,7 +21,7 @@ dataloader_num_workers: 4
 dataset_dir: /path/to/dataset
 
 ### output
-output_dir: saves/qwen2_5vl-7b/lora/sft
+output_dir: /path/to/output
 logging_steps: 1
 save_steps: 20
 plot_loss: true
