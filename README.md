@@ -11,7 +11,7 @@ We present:
 
 ## Dataset
 
-The AUF dataset contains multimodal user feedback collected from the Google Android Help Community, with 21 fine-grained categories.
+The AUF dataset contains multimodal user feedback collected from the Google Android Help Community, with 21 fine-grained categories. Sample images are provided here. The full image dataset is coming soon.
 
 ## Project Structure
 
@@ -60,7 +60,6 @@ Configure your API settings in `src/distillation/.env`:
 ```
 API_KEY=your-api-key
 API_BASE_URL=your-api-base-url
-MODEL=gpt-4o-mini
 ```
 
 Run distillation:
