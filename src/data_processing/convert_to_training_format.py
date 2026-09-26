@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-PROMPT_TEMPLATE = """Your prompt here"""
+PROMPT_TEMPLATE = """prompt here"""
 
 
 def load_json(file_path):

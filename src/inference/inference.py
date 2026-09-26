@@ -13,8 +13,8 @@ from PIL import Image
 PROMPT = """Your prompt here"""
 
 # Model configuration
-MODEL_PATH = "<model_path>"
-IMAGES_DIR = "<images_directory>"
+MODEL_PATH = "/path/to/your/model"
+IMAGES_DIR = "/path/to/your/images"
 
 def compress_image_if_needed(image_path: str) -> str:
     """Compress image if dimensions exceed 1024x1024, maintaining aspect ratio"""
