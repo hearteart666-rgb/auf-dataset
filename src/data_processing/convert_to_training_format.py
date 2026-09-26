@@ -51,7 +51,7 @@ def convert_to_training_format(filtered_data, original_data):
             print("Aborting conversion.")
             sys.exit(1)
 
-        user_title = filtered_item.get('user_title', '')
+        user_title = original_item.get('user_title', '')
         user_question = original_item.get('user_question', '')
         images_data = original_item.get('images', [])
 
@@ -103,9 +103,9 @@ def convert_to_training_format(filtered_data, original_data):
 
 def main():
     """Main function"""
-    filtered_file = "classification_results.json"
-    original_file = "data/train.json"
-    output_file = "training_data.json"
+    filtered_file = "classification_results.json" # Path to your distillation results file
+    original_file = "data/original_data/train.json" # Path to original training data
+    output_file = "training_data.json" # Path for output training data
 
     if not os.path.exists(filtered_file):
         print(f"Error: File not found {filtered_file}")
