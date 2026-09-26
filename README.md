@@ -1,4 +1,4 @@
-# AUF Dataset & MCRF Framework
+# AUF Dataset & CATSF Framework
 
 This repository contains the code for **"The Nexus of Logos: Cost-Effective Multimodal Classification via Distilled Reasoning for Mobile User Feedback"**.
 
@@ -7,7 +7,7 @@ This repository contains the code for **"The Nexus of Logos: Cost-Effective Mult
 We present:
 
 - **AUF Dataset**: The first manually annotated, high-quality multimodal Android User Feedback dataset (3,750 entries)
-- **MCRF**: Vision-Language Model-based Multimodal Classification Reasoning Framework - a teacher-student architecture for cost-effective and interpretable classification
+- **CATSF**: Capability-Aware Teacher-Student Framework - a teacher-student architecture for cost-effective and interpretable classification
 
 ## Dataset
 
