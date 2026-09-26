@@ -1,0 +1,101 @@
+{
+  "categories": {
+    "Accessibility": {
+      "group": "Accessibility / Camera",
+      "definition": "Problems related to phone accessibility features or those solvable through accessibility settings, including visual or auditory assistance, accessibility apps, or shortcut failures."
+    },
+    "Camera": {
+      "group": "Accessibility / Camera",
+      "definition": "Issues involving the device camera usage, photo/video capture, or problems such as blurry or corrupted images."
+    },
+    "Wi-Fi Connectivity": {
+      "group": "Wi-Fi Connectivity / Bluetooth",
+      "definition": "Any issues related to the network, including Wi-Fi connectivity, configuration doubts, disconnections, or slow speeds."
+    },
+    "Bluetooth": {
+      "group": "Wi-Fi Connectivity / Bluetooth",
+      "definition": "Problems involving Bluetooth device pairing, connectivity, or stability."
+    },
+    "Privacy & Permissions": {
+      "group": "Privacy & Permissions / Malware / Security",
+      "definition": "Issues involving app permission management, privacy settings, or measures taken to protect user privacy/data before an attack occurs. Includes concerns about data protection and user privacy."
+    },
+    "Malware": {
+      "group": "Privacy & Permissions / Malware / Security",
+      "definition": "Any issues caused by malicious software, or user suspicions about unknown or potentially harmful apps."
+    },
+    "Security": {
+      "group": "Privacy & Permissions / Malware / Security",
+      "definition": "Problems where system protection fails, the device is under attack, remotely managed/locked, subject to security restrictions, hacked accounts, or other consequences of system intrusion."
+    },
+    "Google Play Services": {
+      "group": "Google Play Services",
+      "definition": "Problems related to Google Play Services, including failed system updates, download errors, or related malfunctions."
+    },
+    "Backup & Restore": {
+      "group": "Backup & Restore / Settings / Notifications",
+      "definition": "Problems related to device data backup, data restoration, or issues involving factory reset."
+    },
+    "Settings": {
+      "group": "Backup & Restore / Settings / Notifications",
+      "definition": "Issues where the user is dissatisfied with interface icons or other non-functional aspects (such as layout or icon placement), or encounters problems when making personalized adjustments or changes to settings. Only personalized adjustments count, not all problems solvable via system settings."
+    },
+    "Notifications": {
+      "group": "Backup & Restore / Settings / Notifications",
+      "definition": "Issues related to notification functionality but not the content of the notifications themselves, or cases where the user receives abnormal or unknown notifications, such as mis-delivered notifications or misconfigured notification settings."
+    },
+    "Find My Device": {
+      "group": "Find My Device / GPS / Location",
+      "definition": "Malfunctions or issues related to the \"Find My Device\" feature."
+    },
+    "GPS": {
+      "group": "Find My Device / GPS / Location",
+      "definition": "Any GPS-related problems, including inaccurate positioning or location errors."
+    },
+    "Location": {
+      "group": "Find My Device / GPS / Location",
+      "definition": "Issues involving all general location services and settings."
+    },
+    "Device Protection": {
+      "group": "Device Protection / Forgot PIN, Pattern, Passcode / Syncing",
+      "definition": "Device protection issues before an actual attack occurs, including user concerns about mobile security and Factory Reset Protection (FRP)-related problems."
+    },
+    "Forgot PIN, Pattern, Passcode": {
+      "group": "Device Protection / Forgot PIN, Pattern, Passcode / Syncing",
+      "definition": "Problems caused by the user forgetting their phone unlock method (PIN, pattern, or passcode)."
+    },
+    "Syncing": {
+      "group": "Device Protection / Forgot PIN, Pattern, Passcode / Syncing",
+      "definition": "Errors in data synchronization between devices or Google account services."
+    },
+    "Battery": {
+      "group": "Battery / Performance / Stability",
+      "definition": "Problems related to the battery, including battery life, charging faults, or abnormal power consumption suspected to be battery-related."
+    },
+    "Performance": {
+      "group": "Battery / Performance / Stability",
+      "definition": "Problems with degraded device responsiveness or slowness, such as lagging, delayed input, or unresponsive apps."
+    },
+    "Stability": {
+      "group": "Battery / Performance / Stability",
+      "definition": "Problems involving unexpected system crashes, repeated restarts, or other abnormal behaviors for unknown reasons, as well as overheating or other system stability issues."
+    },
+    "Other": {
+      "group": "Other",
+      "definition": "Issues not included in the above categories, such as storage problems, physical device damage, or vendor/merchant-related issues."
+    }
+  },
+  "groups": [
+    "Accessibility / Camera",
+    "Wi-Fi Connectivity / Bluetooth",
+    "Privacy & Permissions / Malware / Security",
+    "Google Play Services",
+    "Backup & Restore / Settings / Notifications",
+    "Find My Device / GPS / Location",
+    "Device Protection / Forgot PIN, Pattern, Passcode / Syncing",
+    "Battery / Performance / Stability",
+    "Other"
+  ],
+  "num_categories": 21,
+  "num_groups": 9
+}
