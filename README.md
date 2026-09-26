@@ -1,6 +1,6 @@
 # AUF Dataset & MCRF Framework
 
-This repository contains the code and data for **"The Nexus of Logos: Cost-Effective Multimodal Classification via Distilled Reasoning for Mobile User Feedback"**.
+This repository contains the code for **"The Nexus of Logos: Cost-Effective Multimodal Classification via Distilled Reasoning for Mobile User Feedback"**.
 
 ## Overview
 
@@ -11,23 +11,14 @@ We present:
 
 ## Dataset
 
-The AUF dataset contains multimodal user feedback collected from the Google Android Help Community, with 21 fine-grained categories. Sample images are provided here. The full image dataset is coming soon.
+The AUF dataset contains multimodal user feedback collected from the Google Android Help Community, with 21 fine-grained categories.
+
+**Data availability**: The dataset is too large to be hosted in this repository and will be released soon. This repository currently provides the code and prompts only.
 
 ## Project Structure
 
 ```
 auf-dataset/
-├── data/
-│   ├── original_data/        # Original dataset files
-│   │   ├── data.json         # Full dataset (3,750 entries)
-│   │   ├── train.json        # Training set
-│   │   └── test.json         # Test set
-│   ├── distillation_data/    # Distilled reasoning outputs from teacher models
-│   │   ├── distillation_data_simple_gpt-4o-mini_stage1.jsonl
-│   │   ├── distillation_data_simple_gpt-4o-mini_stage2.jsonl
-│   │   ├── distillation_data_simple_gemini-2.5-flash_stage1.jsonl
-│   │   └── distillation_data_simple_gemini-2.5-flash_stage2.jsonl
-│   └── examples/             # Image examples for demonstration
 └── src/
     ├── configs/
     │   └── config.yaml       # Training configuration
@@ -82,9 +73,7 @@ cd src/data_processing
 python convert_to_training_format.py
 ```
 
-This script merges `classification_results.json` (from step 1) with `data/original_data/train.json` to create `training_data.json` in the format required by fine-tuning frameworks.
-
-**Note**: Pre-computed distillation results are available in `data/distillation_data/` for reference.
+This script merges `classification_results.json` (from step 1) with the original training set to create `training_data.json` in the format required by fine-tuning frameworks.
 
 ### 3. Fine-tuning
 
